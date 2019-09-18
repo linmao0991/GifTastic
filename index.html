@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gif Tastic</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="jumbotron rounded m-2 bg-secondary text-center">
+            <h1>Gif Tastic</h1>
+        </div>
+        <!-- Container for main content -->
+        <div class="container w-100">
+            <div class="row">
+                <!-- Column for adding buttons and collection of buttons -->
+                <div class="col-4">
+
+                    <!-- Top row for adding typed input -->
+                    <div class="row mb-1">
+                        <div id="inputSection" class="col rounded">
+                            <form action="/action_page.php">
+                                <p><b>Add a button!</b></p>
+                                <input type="text" name="fname"><br>
+                                <button class="btn btn-info m-1" type="submit" value="Submit">Submit</button>
+                            </form> 
+                        </div>
+                    </div>
+                    <!-- Bottom row for button collection -->
+                    <div class="row">
+                        <div id="buttonColumn" class="col border rounded">
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Column for popping in GIFS -->
+                <div class="col-8">
+                    <div id="cardColumns" class="card-columns">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./assets/javascript/app.js"></script>
+    </body>
+</html>
