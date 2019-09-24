@@ -1,3 +1,19 @@
 #inputSection{
     background-color: rgba(75, 74, 74, 0.6);
 }
+
+.jumbotron {
+    box-shadow: 4px 4px 5px 2px #9b9b9b;
+}
+
+.card{
+    box-shadow: 4px 4px 10px 2px #9b9b9b;
+}
+
+p {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 18px;
+}

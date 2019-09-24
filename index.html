@@ -10,11 +10,21 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <div class="jumbotron rounded m-2 bg-secondary text-center">
+        <div class="jumbotron rounded m-3 bg-dark text-center text-white">
             <h1>Gif Tastic</h1>
         </div>
         <!-- Container for main content -->
         <div class="container w-100">
+            <!-- Options Row -->
+            <div class="row mb-2">
+                <div class="col-4 ">
+                    <button id="clearLocalStorage" class="btn btn-info" type="button">Clear Local Storage</button>
+                </div>
+                <div class="col-8 ">
+
+                </div>
+            </div>
+
             <div class="row">
                 <!-- Column for adding buttons and collection of buttons -->
                 <div class="col-4">
@@ -22,11 +32,11 @@
                     <!-- Top row for adding typed input -->
                     <div class="row mb-1">
                         <div id="inputSection" class="col rounded">
-                            <form action="/action_page.php">
-                                <p><b>Add a button!</b></p>
-                                <input type="text" name="fname"><br>
-                                <button class="btn btn-info m-1" type="submit" value="Submit">Submit</button>
+                            <form>
+                                <h5>Add a topic!</h5>
+                                <input id="newTopic" type="text"><input id="addTopic" value="Add Topic" type="submit"><br>
                             </form> 
+                            <br>
                         </div>
                     </div>
                     <!-- Bottom row for button collection -->
