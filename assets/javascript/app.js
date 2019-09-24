@@ -23,7 +23,7 @@ $(window).on("load", function(){
 });
 
 //On click function listining to id addTopic to add the input as a button.
-$(document).on("click", "#addTopic", function(){
+$(document).on("click", "#addTopicButton", function(){
     var newTopic = $("#newTopic").val().trim().toLowerCase();
     if(topics.indexOf(newTopic) == -1 && newTopic != ""){
     createButton(newTopic);
