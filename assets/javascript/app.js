@@ -105,10 +105,19 @@ function displayResults(passedTopic){
             var cardBody = $("<div>").addClass("card-body");
             var cardBodyTitle = $("<h5>").addClass("card-title border rounded p-1");
             cardBodyTitle.text(response.data[i].title);
-            var cardBodyText = $("<p>").addClass("card-text");
-            cardBodyText.html("The above image is rated: <b>"+response.data[i].rating.toUpperCase()+"</b>");
             cardBody.append(cardBodyTitle);
-            cardBody.append(cardBodyText);
+            var cardBodyRating = $("<p>").addClass("card-text");
+            cardBodyRating.html("The above image is rated: <b>"+response.data[i].rating.toUpperCase()+"</b>");
+            cardBody.append(cardBodyRating);
+            if(response.data[i].user !== undefined ){
+                var cardBodyUser = $("<p>").addClass("card-text");
+                cardBodyUser.html("<a href='"+response.data[i].user.profile_url+"'>- "+response.data[i].user.username+"</a>");
+                cardBody.append(cardBodyUser);
+            }else{
+                var cardBodyUser = $("<p>").addClass("card-text");
+                cardBodyUser.html("- Username Unavaliable");
+                cardBody.append(cardBodyUser);
+            }
             card.append(cardBody);
             //Append to html
             $("#cardColumns").append(card);
